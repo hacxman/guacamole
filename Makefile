@@ -17,7 +17,9 @@
 ## along with this library.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-BINARY = usart
+BINARY = usart.elf
+
+usart: usart.o msg.o crc8.o
 
 LDSCRIPT = stm32f205-qemu.ld
 
